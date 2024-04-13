@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(66, 66, 25);
+}
+html, body{height: 100%;}
+body{
+    background-image: linear-gradient(to top, #ffff00, #fff700, #d2a40c, #c49209, #b58707);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+form{
+    width: 400px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+form > h2{
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+.name{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.name > input{
+    width: 48%;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.name > input:focus{border-bottom: 1px solid rgba(43, 43, 43, 0.685);}
+form > input{
+    width: 100%;
+    height: 30px;
+    padding-left: 10px;
+    border: none;
+    transition: .5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+form > input:focus{border-bottom: 1px solid rgba(43, 43, 43, 0.685);}
+form > button{
+    height: 30px;
+    border: none;
+    color: rgb(199, 199, 199);
+    background-color: black;
+    cursor: pointer;
+}
+form > button:active{
+    transform: scale(1.01);
+}
